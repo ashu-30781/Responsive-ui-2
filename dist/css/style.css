@@ -1,247 +1,299 @@
-/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
-
-/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-}
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
+body {
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden,
-[hidden] {
-  display: none !important;
-}
-
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
-.visually-hidden {
   border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  font-size: Verdana, sans-serif;
+  font-size: 15px;
+  line-height: 1;
+  font-family: sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1139px;
+}
+
+.logo {
+  margin-left: 15px;
+  float: left;
+}
+
+.nav-bar {
+  background: rgb(255, 255, 255);
+}
+
+.text {
+  max-width: 100%;
+  float: right;
+  padding-top: 14px;
+}
+
+.text a {
+  margin: 0px;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.main-con {
+  background-image: url("/dist/img/Hero Image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flow-root;
+}
+.main-con .main-text {
+  width: 40%;
+  margin-left: 15px;
+  padding: 70px 10px;
+}
+.main-con h2 {
+  color: rgb(255, 255, 255);
+  font-size: 52px;
+}
+.main-con .main-p {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+#menu {
+  display: none;
+}
+
+.Highlighted-content {
+  background: linear-gradient(126.81deg, #f8ae47 3.48%, #ef7622 116.85%);
+  min-height: 581px;
+  margin-top: -20px;
+}
+.Highlighted-content .main-gal {
+  margin-top: 60px;
+}
+.Highlighted-content .Highlighted-text1 {
+  font-size: 20px;
+  color: black;
+  width: 50%;
+  margin-top: 60px;
+  float: left;
+}
+.Highlighted-content .Highlighted-text1 h4 {
+  font-size: 24px;
+}
+.Highlighted-content .Highlighted-text1 .Highlighted-p {
+  font-size: 38px;
+}
+.Highlighted-content .Highlighted-text1 .Highlighted-para {
+  font-size: 17px;
+}
+.Highlighted-content .Highlighted-text2 {
+  font-size: 20px;
+  color: black;
+  box-sizing: border-box;
+  background: white;
+  width: 46%;
+  margin-left: 2%;
+  margin-top: 26px;
+  margin-right: 2%;
+  float: left;
+  padding: 82px 17px;
+}
+.Highlighted-content .Highlighted-text2 h4 {
+  font-size: 24px;
+}
+.Highlighted-content .Highlighted-text2 .Highlighted-p {
+  font-size: 20px;
+  width: 212px;
+}
+.Highlighted-content .Highlighted-text2 .Highlighted-para {
+  font-size: 14px;
+}
+
+.hignlight-img {
+  background-image: url(/dist/img/shutterstock_454851409.png);
+  min-height: 580px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -172px;
+}
+
+.information-section {
+  background: linear-gradient(126.81deg, #030f21 3.48%, #40465c 116.85%);
+  min-height: 581px;
+}
+.information-section .left-text {
+  color: white;
+  font-size: 20px;
+  width: 30%;
+  margin-top: 140px;
+  float: left;
+  padding-bottom: 60px;
+  margin-left: 2%;
+}
+.information-section h5 {
+  font-family: Roboto;
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: -0.3000000119px;
+  text-align: left;
+}
+.information-section .left-para {
+  font-size: 18px;
+}
+.information-section .right-text {
+  color: white;
+}
+.information-section span {
+  margin-left: 127px;
+}
+.information-section .information-text {
+  color: white;
+  font-size: 20px;
+  width: 30%;
+  margin-top: 60px;
+  float: left;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.information-section .highlight {
+  font-size: 16px;
+}
+.information-section .para-1 {
+  font-size: 14px;
+}
+
+.gallery-section {
+  min-height: 581px;
+}
+.gallery-section .gallery-section {
+  min-height: 581px;
+}
+.gallery-section .left-text {
+  width: 19%;
+  margin-top: 140px;
+  float: left;
+  padding-bottom: 60px;
+  margin-left: 158px;
+}
+.gallery-section .left-text .text1 {
+  font-size: 18px;
+}
+.gallery-section .left-text .text2 {
+  font-size: 26px;
+}
+.gallery-section .left-text .text3 {
+  font-size: 16px;
+}
+.gallery-section .right-text {
+  color: black;
+}
+.gallery-section .right-text .gal-img {
+  width: 30%;
+  margin-top: 60px;
+  float: left;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.gallery-section .right-text .gal-text {
+  background: white;
   position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
+  margin-top: -229px;
+  padding: 10px 0px;
+  width: 16%;
+  font-size: 18px;
+}
+.gallery-section .right-text #img-size {
+  height: 265px;
 }
 
-/*
- * Extends the .visually-hidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visually-hidden.focusable:active,
-.visually-hidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
+@media screen and (max-width: 1024px) {
+  .Highlighted-content {
+    margin-top: -70px;
+  }
+  .text a {
+    display: block;
+  }
+  .text {
+    float: initial;
+  }
+  .logo {
+    float: initial;
+  }
+  .main-con {
+    min-height: 61vh;
+    background-size: auto;
+  }
+  .main-con .main-p {
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+  }
+  .main-con h2 {
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+  }
+  .main-con .main-text {
+    width: 40%;
+    margin-left: 15px;
+  }
+  .main-con .hero {
+    margin-top: 126px;
+    margin-left: 20px;
+  }
 }
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-  visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * The use of `table` rather than `block` is only necessary if using
- * `::before` to contain the top-margins of child elements.
- */
-
-.clearfix::before,
-.clearfix::after {
-  content: "";
-  display: table;
-}
-
-.clearfix::after {
-  clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
+@media screen and (max-width: 768px) {
+  .Highlighted-content .Highlighted-text1 {
+    width: 80%;
+    margin-left: 20px;
   }
-
-  a,
-  a:visited {
-    text-decoration: underline;
+  .Highlighted-content .Highlighted-text2 {
+    width: 89%;
+    margin-left: 20px;
   }
-
-  a[href]::after {
-    content: " (" attr(href) ")";
+  .main-con .main-text {
+    width: auto;
+    margin-left: 15px;
+    padding: 70px 10px;
   }
-
-  abbr[title]::after {
-    content: " (" attr(title) ")";
+  .main-con .hero {
+    margin-top: auto;
+    margin-left: auto;
   }
-
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
+  .information-section .left-text {
+    color: white;
+    font-size: 20px;
+    width: 80%;
+    margin-top: 140px;
+    float: left;
+    padding-bottom: 60px;
+    margin-left: 12%;
   }
-
-  pre {
-    white-space: pre-wrap !important;
+  .information-section .information-text {
+    width: auto;
+    padding: 0px 37px;
   }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
+  .gallery-section .left-text {
+    width: auto;
+    padding: 60px 37px;
+    margin: 0px;
   }
-
-  tr,
-  img {
-    page-break-inside: avoid;
+  .gallery-section .right-text .gal-img {
+    width: auto;
+    padding: 60px 37px;
+    margin: 0px;
   }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
+  .gallery-section .right-text .gal-text {
+    padding: 10px 0px;
+    width: 48%;
+    margin-top: -191px;
+    font-size: 18px;
   }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
+  .gallery-section .right-text #img-size {
+    width: 344px;
+    height: 220px;
   }
 }
 
+/*# sourceMappingURL=style.css.map */

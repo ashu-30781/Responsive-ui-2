@@ -1,0 +1,17 @@
+@media screen and (max-width: 1024px) {
+  .text a {
+    display: block;
+  }
+  .text {
+    float: initial;
+    display: none;
+  }
+  .logo {
+    float: initial;
+  }
+  #menu {
+    display: contents;
+  }
+}
+
+/*# sourceMappingURL=menu.css.map */
