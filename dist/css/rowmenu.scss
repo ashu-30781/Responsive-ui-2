@@ -1,0 +1,20 @@
+//responcive Tablet Max
+@media screen and (max-width: 1024px) {
+  .text a {
+    display: block;
+  }
+  .text {
+    float: initial;
+    display: none;
+  }
+  // .logo {
+  //   float: initial;
+  // }
+  #menu {
+    display: contents;
+  }
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 384px) {
+}
